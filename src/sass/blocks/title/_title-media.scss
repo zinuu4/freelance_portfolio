@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .title {
+    &_fz48 {
+      font-size: 42px;
+    }
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .title {
+    &_fz48 {
+      line-height: 40px;
+      font-size: 31px;
+    }
+  }
+}

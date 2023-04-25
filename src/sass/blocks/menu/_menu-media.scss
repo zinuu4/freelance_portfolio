@@ -1,0 +1,56 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .hamburger {
+    top: 20px;
+    right: 20px;
+  }
+  .menu {
+    &__link {
+      &::before {
+        background-color: $white;
+      }
+      &:hover {
+        font-size: 24px;
+      }
+    }
+    &__social {
+      a:hover {
+        height: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .menu {
+    &__block {
+      width: 280px;
+      padding-top: 110px;
+    }
+    &__close {
+      top: 18px;
+      right: 18px;
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &__link {
+      font-size: 22px;
+      &::before {
+        left: -30px;
+        top: 10.85px;
+        width: 13px;
+        height: 13px;
+      }
+      &:hover {
+        font-size: 22px;
+      }
+    }
+    &__social {
+      bottom: 30px;
+    }
+  }
+}

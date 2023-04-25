@@ -1,0 +1,97 @@
+.experience {
+  position: relative;
+  z-index: -2;
+  padding-top: 120px;
+  background-color: $black;
+  &__title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+    @include before_circle;
+    &:before {
+      top: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__wrapper {
+    padding: 60px 65px 0 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 135px;
+  }
+  &__column {
+    &-title {
+      position: relative;
+      padding-left: 35px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: $orange;
+        border-radius: 100%;
+        left: -7px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &::after {
+          content: '';
+          width: 1px;
+          height: 100%;
+          position: absolute;
+          top: -8px;
+          left: 0;
+          background-color: $white;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 44px;
+      top: 64px;
+      background-color: $white;
+    }
+    &-head {
+      position: relative;
+      padding: 45px 0 0 100px;
+    }
+    &-icon {
+      position: absolute;
+      top: 46px;
+      left: 44px;
+      @include before_circle;
+      img {
+        position: absolute;
+        left: 17px;
+        top: 14px;
+      }
+    }
+    &-more {
+      color: $white;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    &-body {
+      color: $white;
+      font-size: 12px;
+      padding-left: 42px;
+      margin-top: 12px;
+    }
+  }
+}

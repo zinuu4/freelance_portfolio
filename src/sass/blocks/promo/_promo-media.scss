@@ -1,0 +1,38 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .promo {
+    padding-top: 150px;
+    &__laptop {
+      left: 67%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .promo {
+    min-height: 800px;
+    padding-top: 80px;
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__laptop {
+      text-align: center;
+      position: relative;
+      top: 90px;
+      left: 2%;
+    }
+    &__link {
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .promo {
+    min-height: 700px;
+  }
+}

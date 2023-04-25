@@ -1,0 +1,48 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .btn {
+    &_laptop {
+      top: 100px;
+      left: 66%;
+      &:hover {
+        background: $orange;
+        color: $white;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    &:hover {
+      background: $orange;
+    }
+    &_inv {
+      height: 45px;
+      padding: 12px 25px;
+      background-color: rgba(255, 255, 255, 0.0);
+    }
+    &_laptop {
+      position: relative;
+      top: 120px;
+      left: -12%;
+      height: 60px;
+      width: 135px;
+    }
+    &_contacts {
+      &:hover {
+        background: $orange;
+        color: $white;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .btn {
+    &_laptop {
+      top: 100px;
+      left: -14%;
+      font-size: 17.5px;
+    }
+  }
+}

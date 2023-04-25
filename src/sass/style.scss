@@ -1,0 +1,85 @@
+// --Main-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&display=swap');
+// --Base-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@import 'base/variables';
+@import 'base/mixins';
+// @import 'base/animations';
+// --All-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    z-index: -3;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+        max-width: 960px;
+    }
+    @media (max-width: 992px) {
+        max-width: 720px;
+    }
+    @media (max-width: 768px) {
+        max-width: 540px;
+    }
+    @media (max-width: 576px) {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.divider {
+    margin: 25px auto 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: $orange;
+  }
+// --Blocks-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@import 'blocks/promo/promo';
+
+@import 'blocks/title/title';
+
+@import 'blocks/buttons/buttons';
+
+@import 'blocks/sidepanel/sidepanel';
+
+@import 'blocks/menu/menu';
+
+@import 'blocks/about/about';
+
+@import 'blocks/experience/experience';
+
+@import 'blocks/skills/skills';
+
+@import 'blocks/portfolio/portfolio';
+
+@import 'blocks/price/price';
+
+@import 'blocks/contacts/contacts';
+
+@import 'blocks/policy/policy';
+
+@import 'blocks/footer/footer';
+
+@import 'blocks/pageup/pageup';
+// --Blocks-media-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@import 'blocks/pageup/pageup-media';
+@import 'blocks/footer/footer-media';
+@import 'blocks/policy/policy_media';
+@import 'blocks/contacts/contacts-media';
+@import 'blocks/price/price-media';
+@import 'blocks/portfolio/portfolio-media';
+@import 'blocks/skills/skills-media';
+@import 'blocks/experience/experience-media';
+@import 'blocks/about/about-media';
+@import 'blocks/menu/menu-media';
+@import 'blocks/sidepanel/sidepanel-media';
+@import 'blocks/buttons/buttons-media';
+@import 'blocks/title/title-media';
+@import 'blocks/promo/promo-media';

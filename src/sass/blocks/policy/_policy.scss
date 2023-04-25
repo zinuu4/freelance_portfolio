@@ -1,0 +1,57 @@
+.policy {
+  background-color: $black;
+  color: white;
+  padding: 60px 20px 75px 20px;
+  &__back {
+    padding: 10px 30px;
+    border: none;
+    background-color: $orange;
+    color: $white;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover {
+      background-color: white;
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+  &__back-down {
+    padding: 10px 30px;
+    border: none;
+    background-color: $orange;
+    color: $white;
+    position: absolute;
+    bottom: 109px;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover {
+      background-color: white;
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+  &__title {
+    margin-top: 12px;
+    font-size: 38px;
+    font-weight: 700;
+  }
+  &__subtitle {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  &__content {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 200%;
+    font-weight: 500;
+  }
+  &__body {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 180%;
+    font-weight: 500;
+  }
+}

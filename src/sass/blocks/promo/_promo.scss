@@ -1,0 +1,134 @@
+.promo {
+  overflow: hidden;
+  height: 100vh;
+	position: relative;
+  // #1d1d1d
+	background-color: $black;
+  padding-top: 205px;
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+  &__glowing {
+    position: relative;
+    transform-origin: right;
+    animation: colorChange 10s linear infinite;
+  }
+  &__glowing:nth-child(even) {
+    transform-origin: left;
+  }
+  &__glowing span {
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+  }
+  &__glowing span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #f00;
+    border-radius: 50%;
+  }
+  &__glowing span:nth-child(3n + 1)::before {
+    background: rgba(134,255,0,1);
+    box-shadow: 0 0 20px rgba(134,255,0,1),
+      0 0 40px rgba(134,255,0,1),
+      0 0 60px rgba(134,255,0,1),
+      0 0 80px rgba(134,255,0,1),
+      0 0 0 8px rgba(134,255,0,.1);
+  }
+  &__glowing span:nth-child(3n + 2)::before {
+    background: rgba(255,214,0,1);
+    box-shadow: 0 0 20px rgba(255,214,0,1),
+      0 0 40px rgba(255,214,0,1),
+      0 0 60px rgba(255,214,0,1),
+      0 0 80px rgba(255,214,0,1),
+      0 0 0 8px rgba(255,214,0,.1);
+  }
+  &__glowing span:nth-child(3n + 3)::before {
+    background: rgba(0,226,255,1);
+    box-shadow: 0 0 20px rgba(0,226,255,1),
+      0 0 40px rgba(0,226,255,1),
+      0 0 60px rgba(0,226,255,1),
+      0 0 80px rgba(0,226,255,1),
+      0 0 0 8px rgba(0,226,255,.1);
+  }
+  &__glowing span:nth-child(3n + 1) {
+    animation: animate 10s alternate infinite;
+  }
+  &__glowing span:nth-child(3n + 2) {
+    animation: animate-reverse 3s alternate infinite;
+  }
+  &__glowing span:nth-child(3n + 3) {
+    animation: animate 8s alternate infinite; 
+  }
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+  &__wrapper {
+    display: flex;
+  }
+  &__laptop {
+    text-align: right;
+    position: absolute;
+    left: 70%;
+  }
+  &__title {
+    margin-top: 10px;
+  }
+  &__subtitle {
+    position: relative;
+    padding-left: 10px;
+    @include before_circle;
+    z-index: 2;
+    color: $white;
+  }
+  &__btns {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+  }
+  &__link {
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+  .title_fz48 {
+    color: rgba(225, 225, 225, 0.01);
+    background-image: url('../../img/promo/test3.png');
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animateTitle 15s ease-in-out infinite;
+  }
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+  #computer {
+    transform-origin: center bottom;
+    animation: showComputer 1.5s ease-in, bounceComputer 4s 1.5s infinite;
+  }
+  #shadow {
+    animation: showShadow 2s, scaleShadow 4s 1.5s infinite;
+  }
+  #hole {
+    transform-origin: center center;
+    animation: scaleHoleUp .6s, scaleHoleDown 1s 1.5s;
+    -webkit-animation-fill-mode: forwards;
+  }
+  #code-cover-screen {
+    animation: scrollCodeIn 3s 2s;
+  -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  #scrolling-code {
+    animation: scrollCode 3s 3.5s linear infinite;
+  }
+  #scrolling-code-2 {
+    animation: scrollCode2 3s 3.5s linear infinite;
+    transform: translateY(87px);
+  }
+}
