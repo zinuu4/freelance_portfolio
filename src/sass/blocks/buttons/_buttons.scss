@@ -13,11 +13,10 @@
     background-color: rgba(255, 255, 255, 0.0);
   }
   &_laptop {
-    top: 150px;
     position: absolute;
-    left: 69.5%;
-    height: 60px;
-    transform: rotate(-28.5deg);
+    left: 62px;
+    min-height: 60px;
+    min-width: 135px;
     padding: 16px 27px;
     border-radius: 3px;
     background: $orange;

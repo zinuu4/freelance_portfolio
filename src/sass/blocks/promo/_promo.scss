@@ -1,6 +1,6 @@
 .promo {
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
 	position: relative;
   // #1d1d1d
 	background-color: $black;
@@ -69,8 +69,8 @@
     display: flex;
   }
   &__laptop {
-    text-align: right;
     position: absolute;
+    top: 100px;
     left: 70%;
   }
   &__title {

@@ -4,24 +4,9 @@
   .promo {
     padding-top: 150px;
     &__laptop {
-      left: 67%;
-    }
-  }
-}
-@media (max-width: 768px) {
-  .promo {
-    min-height: 800px;
-    padding-top: 80px;
-    &__wrapper {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    &__laptop {
-      text-align: center;
-      position: relative;
-      top: 90px;
-      left: 2%;
+      position: absolute;
+      top: 20px;
+      left: 66.5%;
     }
     &__link {
       &:hover {
@@ -31,8 +16,36 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .promo {
+    min-height: 740px;
+    padding-top: 80px;
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__laptop {
+      position: relative;
+      left: 0;
+    }
+  }
+}
 @media (max-width: 576px) {
   .promo {
     min-height: 700px;
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+      &::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__btns {
+      margin: 25px auto 0 auto;
+    }
   }
 }
