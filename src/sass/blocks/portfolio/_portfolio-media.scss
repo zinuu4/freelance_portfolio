@@ -1,8 +1,34 @@
 @media (max-width: 1200px) {
+  .portfolio {
+    &__wrapper {
+      grid-template: repeat(1,1fr)/repeat(3,1fr);
+    }
+  }
 }
 @media (max-width: 992px) {
+  .portfolio {
+    &__wrapper {
+      grid-template: repeat(1,1fr)/repeat(2,1fr);
+    }
+  }
 }
 @media (max-width: 768px) {
+  .portfolio {
+    padding-top: 70px;
+    &__wrapper {
+      margin-top: 40px;
+      grid-template: 1fr/1fr;
+    }
+    &__item {
+      padding: 0 45px;
+    }
+  }
 }
 @media (max-width: 576px) {
+  .portfolio {
+    padding-top: 60px;
+    &__item {
+      padding: 0 15px;
+    }
+  }
 }

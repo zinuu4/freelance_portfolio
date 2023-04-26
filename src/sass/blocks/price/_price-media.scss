@@ -1,8 +1,36 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
+  .price {
+    &__wrapper {
+      grid-template: repeat(4, minmax(45px, auto)) / 432px;
+      justify-content: center;
+      row-gap: 25px;
+    }
+    &__item:nth-child(4) {
+      order: 4;
+    }
+    &__item:nth-child(2) {
+      order: 3;
+    }
+  }
 }
 @media (max-width: 768px) {
+  .price {
+    padding-top: 40px;
+    &__wrapper {
+      margin-top: 40px;
+      grid-template: repeat(4, minmax(45px, auto)) / 432px;
+    }
+  }
 }
 @media (max-width: 576px) {
+  .price {
+    padding-top: 30px;
+    &__wrapper {
+      margin-top: 40px;
+      padding: 0 10px;
+      grid-template: repeat(4, minmax(45px, auto)) / 0.85fr;
+    }
+  }
 }
