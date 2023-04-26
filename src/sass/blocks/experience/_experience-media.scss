@@ -28,11 +28,10 @@
 }
 @media (max-width: 576px) {
   .experience {
-    padding-top: 40px;
+    padding-top: 60px;
     &__wrapper {
       padding: 60px 10px 0 10px;
       grid-template-columns: 90%;
-      gap: 50px 0;
       justify-content: center;
     }
   }
