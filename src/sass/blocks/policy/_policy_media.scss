@@ -1,8 +1,45 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
+  .policy {
+    &__title {
+      font-size: 34px;
+    }
+  }
 }
 @media (max-width: 768px) {
+  .policy {
+    &__title {
+      font-size: 31px;
+    }
+    &__subtitle {
+      margin-top: 30px;
+      font-size: 25px;
+    }
+    &__content {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+    &__body {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  }
 }
 @media (max-width: 576px) {
+  .policy {
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle {
+      margin-top: 20px;
+      font-size: 21px;
+    }
+    &__content {
+      font-size: 15px;
+    }
+    &__body {
+      font-size: 13px;
+    }
+  }
 }

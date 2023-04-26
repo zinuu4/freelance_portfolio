@@ -1,16 +1,19 @@
 .policy {
   background-color: $black;
   color: white;
-  padding: 60px 20px 75px 20px;
+  padding: 64px 20px 84px 20px;
+  position: relative;
   &__back {
-    padding: 10px 30px;
+    padding: 10px 45px;
     border: none;
     background-color: $orange;
     color: $white;
+
+    display: inline-block;
     position: absolute;
-    top: 0px;
     left: 50%;
     transform: translateX(-50%);
+    top: 0;
     &:hover {
       background-color: white;
       color: $orange;
@@ -18,14 +21,16 @@
     }
   }
   &__back-down {
-    padding: 10px 30px;
+    padding: 10px 45px;
     border: none;
     background-color: $orange;
     color: $white;
+
+    display: inline-block;
     position: absolute;
-    bottom: 109px;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 40px;
     &:hover {
       background-color: white;
       color: $orange;
@@ -33,7 +38,7 @@
     }
   }
   &__title {
-    margin-top: 12px;
+    margin-top: 25px;
     font-size: 38px;
     font-weight: 700;
   }

@@ -18,6 +18,9 @@
 @media (max-width: 768px) {
   .price {
     padding-top: 40px;
+    .divider {
+      margin-top: 25px;
+    }
     &__wrapper {
       margin-top: 40px;
       grid-template: repeat(4, minmax(45px, auto)) / 432px;
@@ -27,10 +30,14 @@
 @media (max-width: 576px) {
   .price {
     padding-top: 30px;
+    .divider {
+      margin-top: 20px;
+    }
     &__wrapper {
       margin-top: 40px;
       padding: 0 10px;
       grid-template: repeat(4, minmax(45px, auto)) / 0.85fr;
     }
+
   }
 }

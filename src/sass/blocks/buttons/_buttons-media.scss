@@ -16,9 +16,19 @@
         color: $white;
       }
     }
+    &_contacts {
+      padding: 12px 55px;
+    }
   }
 }
 @media (max-width: 768px) {
 }
 @media (max-width: 576px) {
+  .btn {
+    &_contacts {
+      padding: 12px 25px;
+      width: 175px;
+      order: 2;
+    }
+  }
 }

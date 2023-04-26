@@ -1,8 +1,104 @@
 @media (max-width: 1200px) {
+  .contacts {
+    &__wrapper {
+      padding-right: 10px;
+      display: grid;
+      grid-template-columns: 410px 480px;
+      column-gap: 60px;
+    }
+    &__form {
+      margin-top: 30px;
+      display: grid;
+      grid-template: 45px 170px 45px / repeat(2, 230px);
+      column-gap: 20px;
+      row-gap: 27px;
+    }
+  }
 }
 @media (max-width: 992px) {
+  .contacts {
+    &__wrapper {
+      padding: 0 10px;
+      grid-template-columns: 640px;
+      justify-content: center;
+    }
+    &__photo {
+      display: none;
+    }
+    &__form {
+      grid-template: 45px 170px 45px / repeat(2, 310px);
+    }
+    &__triggers {
+      justify-content: space-between;
+    }
+  }
 }
 @media (max-width: 768px) {
+  .contacts {
+    padding-top: 70px;
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 250px);
+    }
+  }
 }
 @media (max-width: 576px) {
+  .contacts {
+    padding-top: 60px;
+    &__form {
+      grid-template: 45px 45px 190px minmax(45px, auto) / 0.9fr;
+      justify-content: center;
+      row-gap: 15px;
+    }
+    &__textarea {
+      grid-column: unset;
+      width: 100%;
+  }
+  &__triggers {
+      grid-column: unset;
+      grid-template-columns: 1fr;
+      column-gap: unset;
+      row-gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 10px;
+  }
+  &__title {
+    text-align: center;
+    &:before {
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+    &__subtitle {
+      text-align: center;
+    }
+    &__descr {
+      .divider {
+        margin: 4px auto 0 auto;
+      }
+    }
+    &__text {
+      text-align: center;
+      font-size: 13.5px;
+    }
+    &__link {
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &__social {
+      text-align: center;
+    }
+    &__policy {
+      justify-content: center;
+      order: 1;
+    }
+  }
 }
