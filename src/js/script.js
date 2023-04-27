@@ -30,6 +30,7 @@ const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       closeElem = document.querySelector('.menu__close'),
       overlay = document.querySelector('.menu__overlay');
+      menuItems = document.querySelectorAll('.menu__link');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -47,6 +48,12 @@ window.addEventListener("keydown", (e) => {
     if (e.key == 'Escape') {
         menu.classList.remove('active');
     }
+});
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    menu.classList.remove('active');
+  })
 });
 
 //WOW
