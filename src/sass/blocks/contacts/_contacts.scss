@@ -39,23 +39,12 @@
   &__social {
     margin-top: 20px;
     transition: 1s all;
-    svg:hover {
-      transition: 1s all;
-      width: 35px;
-      height: 35px;
-    }
   }
   &__link {
     margin-right: 25px;
     &:hover {
       transition: 1s all;
-      width: 35px;
-      height: 35px;
       text-decoration: none;
-    }
-    img {
-      max-width: 30px;
-      max-height: 30px;
     }
   }
   &__link:nth-child(2) {

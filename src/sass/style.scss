@@ -16,6 +16,9 @@ body {
     position: relative;
     z-index: -3;
 }
+html {
+    scroll-behavior: smooth;
+}
 .container {
     width: 1140px;
     margin: 0 auto;
