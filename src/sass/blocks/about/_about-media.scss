@@ -21,6 +21,9 @@
       column-gap: 30px;
       row-gap: 30px;
     }
+    &__text {
+      font-size: 15.5px;
+    }
     &__skills {
       grid-template-columns: 380px;
       grid-auto-rows: minmax(115px, auto);
