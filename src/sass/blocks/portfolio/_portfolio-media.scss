@@ -10,6 +10,11 @@
     &__wrapper {
       grid-template: repeat(1,1fr)/repeat(2,1fr);
     }
+    &__item {
+      &:hover {
+        transform: scale(1);
+      }
+    }
   }
 }
 @media (max-width: 768px) {
