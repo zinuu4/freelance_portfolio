@@ -46,6 +46,7 @@
     }
     &__skills {
       grid-template-columns: 440px;
+      grid-template-rows: minmax(115px, auto);
       &-item {
         grid-template-columns: 40px 380px;
         column-gap: 20px;

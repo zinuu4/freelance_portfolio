@@ -50,8 +50,9 @@
     }
     &__ratings {
       grid-template-columns: repeat(1, 400px);
-      grid-template-rows: repeat(6, 70px);
+      grid-template-rows: repeat(5, 70px);
       justify-content: center;
+      padding-top: 70px;
       &-item {
         grid-template-columns: 200px 35px;
       }
@@ -64,6 +65,9 @@
 @media (max-width: 576px) {
   .skills {
     padding-top: 60px;
+    &__ratings {
+      padding-top: 60px;
+    }
     &__items {
       grid-template-columns: 300px;
       grid-template-rows: repeat(9, 270px);

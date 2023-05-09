@@ -1,6 +1,6 @@
 .title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 60px;
   margin-bottom: 0;
   color: $white;
@@ -17,6 +17,7 @@
     line-height: 30px;
   }
   &_fz48 {
-    font-size: 48px;
+    font-size: 39px;
+    line-height: 140%;
   }
 }
