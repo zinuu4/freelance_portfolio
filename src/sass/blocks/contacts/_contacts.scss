@@ -110,6 +110,11 @@
       background-color: $black;
       border: 1px solid white;
       color: $white;
+      transition: 1s all;
+      outline: none;
+      &:hover {
+        transform: scale(1.03);
+      }
     }
   }
   &__textarea {
@@ -125,6 +130,11 @@
       background-color: $black;
       border: 1px solid white;
       color: $white;
+      transition: 1s all;
+      outline: none;
+      &:hover {
+        transform: scale(1.03);
+      }
     }
   }
 }

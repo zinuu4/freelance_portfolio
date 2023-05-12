@@ -4,16 +4,19 @@
   .btn {
     &:hover {
       background-color: $orange;
+      transform: scale(1);
     }
     &_inv {
       &:hover {
         color: $white;
+        transform: scale(1);
       }
     }
     &_laptop {
       &:hover {
         background: $orange;
         color: $white;
+        transform: scale(1);
       }
     }
     &_contacts {

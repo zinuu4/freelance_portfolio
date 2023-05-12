@@ -31,6 +31,26 @@
     &__triggers {
       justify-content: space-between;
     }
+    &__policy {
+      a:hover {
+        color: $orange;
+        text-decoration: none;
+      }
+    }
+    &__input {
+      input {
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+    &__textarea {
+      textarea {
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
   }
 }
 @media (max-width: 768px) {

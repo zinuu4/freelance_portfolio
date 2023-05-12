@@ -65,9 +65,6 @@
 @media (max-width: 576px) {
   .skills {
     padding-top: 60px;
-    &__ratings {
-      padding-top: 60px;
-    }
     &__items {
       grid-template-columns: 300px;
       grid-template-rows: repeat(9, 270px);
@@ -76,7 +73,8 @@
     }
     &__ratings {
       grid-template-columns: repeat(1, 80%);
-      grid-template-rows: repeat(6, 70px);
+      grid-template-rows: repeat(5, 70px);
+      padding-top: 60px;
       &-line {
         width: 100%;
       }

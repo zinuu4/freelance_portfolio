@@ -4,6 +4,9 @@
   .pageup {
     bottom: 15px;
     right: 15px;
+    &:hover {
+      transform: scale(1);
+    }
   }
 }
 @media (max-width: 768px) {

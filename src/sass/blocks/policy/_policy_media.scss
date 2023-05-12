@@ -5,6 +5,18 @@
     &__title {
       font-size: 34px;
     }
+    &__back {
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+    &__back-down {
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
   }
 }
 @media (max-width: 768px) {
